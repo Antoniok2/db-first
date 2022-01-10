@@ -14,6 +14,6 @@ Iban = "Varchar(100)"
 
 Data Assunzione = "Date" (Default) <!-- Se non viene inserita la data, il sistema in automatico inserirsce la data del momento che dovrebbe coincidere con la data di assunzione del dipendente -->
 
-Paga = "Int" (Default) <!-- Valore di paga inserita di default in caso di non inserimento -->
+Paga = "Float(6,4)" (Default) <!-- Valore di paga inserita di default in caso di non inserimento, uso float specificando che voglio massimo 6 numeri di cui 4 dopo la virgola -->
 
 Ruolo = "Varchar(30) (NotNull)" <!--Non può essere vuoto in quanto il dipendente è assunto per un ruolo specifico-->
