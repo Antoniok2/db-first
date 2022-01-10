@@ -16,13 +16,13 @@
             <thead>
                 <tr>
                     <th>
-                        Anagrafica = "Varchar(60)"
+                        Anagrafica = "Varchar(60) (NotNull)" <!--Il campo deve essere obbligatorio-->
                     </th>
                     <th>
-                        Data di nascita = "Date"
+                        Data di nascita = "Date" 
                     </th>
                     <th>
-                        Residenza = "Varchar"
+                        Residenza = "Varchar (NotNull)" <!-- Per invio di comunicazioni scritte in caso di problemi con altri recapiti -->
                     </th>
                     <th>
                         Mail = "Varchar" (NotNull) <!-- not null perchè il campo deve essere obbligatorio per future comunicazioni dell'azienda -->
@@ -43,7 +43,7 @@
                         Paga = "Int" (Default) <!-- Valore di paga inserita di default in caso di non inserimento -->
                     </th>
                     <th>
-                        Ruolo = "Varchar(30) (NotNull)" 
+                        Ruolo = "Varchar(30) (NotNull)" <!--Non può essere vuoto in quanto il dipendente è assunto per un ruolo specifico-->
                     </th>
                 </tr>
             </thead>
