@@ -1,0 +1,19 @@
+Anagrafica = "Varchar(60) (NotNull)" <!--Il campo deve essere obbligatorio-->
+
+Data di nascita = "Date" 
+
+Residenza = "Varchar (NotNull)" <!-- Per invio di comunicazioni scritte in caso di problemi con altri recapiti -->
+
+Mail = "Varchar" (NotNull) <!-- not null perchè il campo deve essere obbligatorio per future comunicazioni dell'azienda -->
+
+Recapito telefonico = "Varchar(18)" (Unique) <!-- unique perchè può inserire solo un numero valido -->
+
+Codice Fiscale = "Varchar(20)" (Unique) <!-- Penso abbia senso inserire appunto il C.D personale -->
+
+Iban = "Varchar(100)"
+
+Data Assunzione = "Date" (Default) <!-- Se non viene inserita la data, il sistema in automatico inserirsce la data del momento che dovrebbe coincidere con la data di assunzione del dipendente -->
+
+Paga = "Int" (Default) <!-- Valore di paga inserita di default in caso di non inserimento -->
+
+Ruolo = "Varchar(30) (NotNull)" <!--Non può essere vuoto in quanto il dipendente è assunto per un ruolo specifico-->
